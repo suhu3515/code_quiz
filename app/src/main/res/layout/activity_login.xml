@@ -80,8 +80,10 @@
         android:text="save &amp; play"
         android:textStyle="bold"
         android:textSize="20sp"
+        android:fontFamily="@font/bowlby_one_sc"
         android:layout_below="@id/et_age"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:enabled="false"/>
+        android:layout_marginTop="30dp" />
+
 </RelativeLayout>
+
