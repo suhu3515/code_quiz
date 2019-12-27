@@ -8,13 +8,80 @@
     android:background="#085980">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:fontFamily="@font/aguafina_script"
-        android:text="THIS IS LOGIN PAGE"
-        android:textColor="@android:color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="Before we start, we should know some personal details about you.
+        Don't worry, these details are not stored anywhere."
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your name"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:textSize="25sp"
+        android:layout_below="@id/desc"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:maxLength="10"/>
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your age"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:textSize="25sp"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_age"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Age"
+        android:inputType="number"
+        android:maxLength="3"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/white"
+        android:textAllCaps="true"
+        android:textColor="#085980"
+        android:text="save &amp; play"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/et_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:enabled="false"/>
 </RelativeLayout>
