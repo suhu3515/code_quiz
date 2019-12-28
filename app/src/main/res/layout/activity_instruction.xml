@@ -142,5 +142,34 @@
         android:text="happy learning!"
         android:gravity="center_horizontal"/>
 
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ins5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#4CAF50"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="PLAY"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_p_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_play"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="player info"
+        android:textColor="#085980"
+        android:textSize="20sp" />
+
+
 
 </RelativeLayout>
