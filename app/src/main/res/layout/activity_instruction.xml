@@ -64,6 +64,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/ins_head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="INSTRUCTIONS"
@@ -73,5 +74,73 @@
         android:fontFamily="@font/bowlby_one_sc"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/ins1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ins_head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="1. This game is completely for educational purpose"/>
+
+    <TextView
+        android:id="@+id/ins2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ins1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="2. this game includes questions from C, C++, java, python etc."/>
+
+    <TextView
+        android:id="@+id/ins3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ins2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="3. you will get 10 points when you make the answer right"/>
+
+
+    <TextView
+        android:id="@+id/ins4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ins3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="4. THERE is no negative points"/>
+
+    <TextView
+        android:id="@+id/ins5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ins4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="happy learning!"
+        android:gravity="center_horizontal"/>
+
 
 </RelativeLayout>
