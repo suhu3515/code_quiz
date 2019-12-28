@@ -3,6 +3,7 @@ package com.vhddev.codequiz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -15,13 +16,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent logIntent;
-                logIntent= new Intent(MainActivity.this,loginActivity.class);
-                startActivity(logIntent);
-            }
-        },splash_time);
+        SharedPreferences sharedPreferences = getSharedPreferences("UserInfo",MODE_PRIVATE);
+
+        if(sharedPreferences.getString("UserName",null)==null)
+        {
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent logIntent;
+                    logIntent= new Intent(MainActivity.this,loginActivity.class);
+                    startActivity(logIntent);
+                }
+            },splash_time);
+        }
+        else
+        {
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent insIntent = new Intent(MainActivity.this,InstructionActivity.class);
+                    startActivity(insIntent);
+                }
+            },splash_time);
+        }
+
     }
 }
