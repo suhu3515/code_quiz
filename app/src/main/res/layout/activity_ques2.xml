@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Ques1Activity"
+    tools:context=".Ques2Activity"
     android:background="#085980">
 
     <LinearLayout
@@ -132,7 +132,6 @@
         android:fontFamily="@font/bowlby_one_sc"/>
 
     <Button
-        android:id="@+id/btn_q2"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
