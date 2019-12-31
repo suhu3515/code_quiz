@@ -37,7 +37,7 @@
         android:layout_marginLeft="30dp"/>
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_p_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_name"
@@ -51,7 +51,7 @@
         android:id="@+id/txt_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_name"
+        android:layout_below="@id/tv_p_name"
         android:layout_marginTop="20dp"
         android:text="AGE:"
         android:textSize="25sp"
@@ -60,7 +60,7 @@
         android:layout_marginLeft="30dp"/>
 
     <TextView
-        android:id="@+id/tv_age"
+        android:id="@+id/tv_p_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_age"
@@ -74,7 +74,7 @@
         android:id="@+id/txt_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_age"
+        android:layout_below="@id/tv_p_age"
         android:layout_marginTop="20dp"
         android:text="score:"
         android:textSize="25sp"
@@ -83,7 +83,7 @@
         android:layout_marginLeft="30dp"/>
 
     <TextView
-        android:id="@+id/tv_score"
+        android:id="@+id/tv_p_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_score"
@@ -97,7 +97,7 @@
         android:id="@+id/btn_del"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_score"
+        android:layout_below="@id/tv_p_score"
         android:background="@color/red"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"

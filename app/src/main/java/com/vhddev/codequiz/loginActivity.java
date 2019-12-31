@@ -38,6 +38,7 @@ public class loginActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("UserName",name);
                 editor.putInt("score",score);
+                editor.putString("age",age);
                 editor.apply();
 
                 Intent ins_intent = new Intent(loginActivity.this,InstructionActivity.class);
