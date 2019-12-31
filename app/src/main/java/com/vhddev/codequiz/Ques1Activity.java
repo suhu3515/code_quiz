@@ -34,6 +34,10 @@ public class Ques1Activity extends AppCompatActivity {
         name = sharedPreferences.getString("UserName",null);
         score = sharedPreferences.getInt("score",0);
 
+        tv_name.setText(name);
+        t_score = String.valueOf(score);
+        tv_score.setText(t_score);
+
         btn_a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +45,9 @@ public class Ques1Activity extends AppCompatActivity {
                 btn_a.setBackgroundColor(getResources().getColor(R.color.green));
                 btn_b.setBackgroundColor(getResources().getColor(R.color.red));
                 btn_c.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_a.setEnabled(false);
+                btn_b.setEnabled(false);
+                btn_c.setEnabled(false);
                 score = score + 10;
                 t_score = String.valueOf(score);
 
@@ -51,6 +58,38 @@ public class Ques1Activity extends AppCompatActivity {
 
                 tv_name.setText(name);
                 tv_score.setText(t_score);
+            }
+        });
+
+        btn_b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                btn_a.setBackgroundColor(getResources().getColor(R.color.green));
+                btn_b.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
+
+                t_score = String.valueOf(score);
+
+                tv_name.setText(name);
+                tv_score.setText(t_score);
+
+            }
+        });
+
+        btn_c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                btn_a.setBackgroundColor(getResources().getColor(R.color.green));
+                btn_b.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
+
+                t_score = String.valueOf(score);
+
+                tv_name.setText(name);
+                tv_score.setText(t_score);
+
             }
         });
 
