@@ -16,6 +16,8 @@ public class InstructionActivity extends AppCompatActivity {
     TextView tv_name,tv_score;
     Button btn_play,btn_info;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
