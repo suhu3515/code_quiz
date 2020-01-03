@@ -86,7 +86,7 @@
         android:textSize="20sp"
         android:textColor="@android:color/white"
         android:fontFamily="@font/bowlby_one_sc"
-        android:text="Which is the first one in options?"/>
+        android:text="Third W in WWW stands for"/>
 
 
     <Button
@@ -99,7 +99,7 @@
         android:layout_marginRight="25dp"
         android:background="@android:color/white"
         android:textColor="#085980"
-        android:text="SECOND"
+        android:text="WEB"
         android:textSize="15sp"
         android:fontFamily="@font/bowlby_one_sc"/>
 
@@ -113,7 +113,7 @@
         android:layout_marginRight="25dp"
         android:background="@android:color/white"
         android:textColor="#085980"
-        android:text="FIRST"
+        android:text="WIDE"
         android:textSize="15sp"
         android:fontFamily="@font/bowlby_one_sc"/>
 
@@ -127,7 +127,7 @@
         android:layout_marginRight="25dp"
         android:background="@android:color/white"
         android:textColor="#085980"
-        android:text="THIRD"
+        android:text="WORLD"
         android:textSize="15sp"
         android:fontFamily="@font/bowlby_one_sc"/>
 

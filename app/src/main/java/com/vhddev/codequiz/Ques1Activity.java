@@ -96,6 +96,9 @@ public class Ques1Activity extends AppCompatActivity {
                 btn_a.setBackgroundColor(getResources().getColor(R.color.green));
                 btn_b.setBackgroundColor(getResources().getColor(R.color.red));
                 btn_c.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_a.setEnabled(false);
+                btn_b.setEnabled(false);
+                btn_c.setEnabled(false);
 
                 t_score = String.valueOf(score);
 
@@ -112,6 +115,9 @@ public class Ques1Activity extends AppCompatActivity {
                 btn_a.setBackgroundColor(getResources().getColor(R.color.green));
                 btn_b.setBackgroundColor(getResources().getColor(R.color.red));
                 btn_c.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_a.setEnabled(false);
+                btn_b.setEnabled(false);
+                btn_c.setEnabled(false);
 
                 t_score = String.valueOf(score);
 
