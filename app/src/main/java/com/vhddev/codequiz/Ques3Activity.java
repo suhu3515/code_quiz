@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Ques2Activity extends AppCompatActivity {
+public class Ques3Activity extends AppCompatActivity {
 
     String name,t_score;
     int score;
@@ -47,16 +47,16 @@ public class Ques2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ques2);
+        setContentView(R.layout.activity_ques3);
 
         SharedPreferences sharedPreferences = getSharedPreferences("UserInfo",MODE_PRIVATE);
 
-        tv_name = findViewById(R.id.top_name_q2);
-        tv_score = findViewById(R.id.top_score_q2);
-        btn_nxt = findViewById(R.id.btn_q3);
-        btn_a = findViewById(R.id.btn_q2a);
-        btn_b = findViewById(R.id.btn_q2b);
-        btn_c = findViewById(R.id.btn_q2c);
+        tv_name = findViewById(R.id.top_name_q3);
+        tv_score = findViewById(R.id.top_score_q3);
+        btn_nxt = findViewById(R.id.btn_q4);
+        btn_a = findViewById(R.id.btn_q3a);
+        btn_b = findViewById(R.id.btn_q3b);
+        btn_c = findViewById(R.id.btn_q3c);
 
         name = sharedPreferences.getString("UserName",null);
         score = sharedPreferences.getInt("score",0);
@@ -64,6 +64,44 @@ public class Ques2Activity extends AppCompatActivity {
         tv_name.setText(name);
         t_score = String.valueOf(score);
         tv_score.setText(t_score);
+
+        btn_a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                btn_b.setBackgroundColor(getResources().getColor(R.color.green));
+                btn_a.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_a.setEnabled(false);
+                btn_b.setEnabled(false);
+                btn_c.setEnabled(false);
+
+                t_score = String.valueOf(score);
+
+                tv_name.setText(name);
+                tv_score.setText(t_score);
+
+            }
+        });
+
+        btn_c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                btn_b.setBackgroundColor(getResources().getColor(R.color.green));
+                btn_a.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
+                btn_a.setEnabled(false);
+                btn_b.setEnabled(false);
+                btn_c.setEnabled(false);
+
+                t_score = String.valueOf(score);
+
+                tv_name.setText(name);
+                tv_score.setText(t_score);
+
+            }
+        });
 
         btn_b.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,49 +127,12 @@ public class Ques2Activity extends AppCompatActivity {
             }
         });
 
-        btn_a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                btn_b.setBackgroundColor(getResources().getColor(R.color.green));
-                btn_a.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_a.setEnabled(false);
-                btn_b.setEnabled(false);
-                btn_c.setEnabled(false);
-
-                t_score = String.valueOf(score);
-
-                tv_name.setText(name);
-                tv_score.setText(t_score);
-            }
-        });
-
-        btn_c.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                btn_b.setBackgroundColor(getResources().getColor(R.color.green));
-                btn_a.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_a.setEnabled(false);
-                btn_b.setEnabled(false);
-                btn_c.setEnabled(false);
-
-                t_score = String.valueOf(score);
-
-                tv_name.setText(name);
-                tv_score.setText(t_score);
-
-            }
-        });
-
         btn_nxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent nextques_intent = new Intent(Ques2Activity.this,Ques3Activity.class);
-                startActivity(nextques_intent);
+                /*Intent nextques_intent = new Intent(Ques2Activity.this,Ques3Activity.class);
+                startActivity(nextques_intent);*/
 
             }
         });
