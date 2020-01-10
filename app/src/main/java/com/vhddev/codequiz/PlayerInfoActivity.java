@@ -19,31 +19,6 @@ public class PlayerInfoActivity extends AppCompatActivity {
     TextView tv_name,tv_age,tv_score;
     Button btn_d;
 
-    @Override
-    public void onBackPressed() {
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Are you sure to exit?")
-                .setCancelable(false)
-                .setPositiveButton("YES", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        finishAffinity();
-                        System.exit(0);
-                    }
-                })
-                .setNegativeButton("NO", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        dialog.cancel();
-                    }
-                });
-        AlertDialog alert = builder.create();
-        alert.show();
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

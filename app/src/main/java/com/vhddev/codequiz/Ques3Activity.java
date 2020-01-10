@@ -131,8 +131,8 @@ public class Ques3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /*Intent nextques_intent = new Intent(Ques2Activity.this,Ques3Activity.class);
-                startActivity(nextques_intent);*/
+                Intent nextques_intent = new Intent(Ques3Activity.this,Ques4Activity.class);
+                startActivity(nextques_intent);
 
             }
         });

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Ques3Activity"></activity>
+        <activity android:name=".resultActivity"></activity>
+        <activity android:name=".Ques5Activity" />
+        <activity android:name=".Ques4Activity" />
+        <activity android:name=".Ques3Activity" />
         <activity android:name=".Ques2Activity" />
         <activity android:name=".Ques1Activity" />
         <activity android:name=".PlayerInfoActivity" />

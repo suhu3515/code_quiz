@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Ques4Activity"
+    android:background="#085980">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME:"
+                android:textColor="#085980"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/bowlby_one_sc"/>
+
+            <TextView
+                android:id="@+id/top_name_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#085980"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/bowlby_one_sc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#085980"
+                android:textSize="20sp"
+                android:text="SCORE:"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="90dp"
+                android:fontFamily="@font/bowlby_one_sc"/>
+
+            <TextView
+                android:id="@+id/top_score_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#085980"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/bowlby_one_sc"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/q4_head"
+        android:layout_below="@id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="QUESTION 4"
+        android:textSize="30sp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/q4_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q4_head"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="CHOOSE MOBILE OPERATING SYSTEM FROM THE LIST"/>
+
+
+    <Button
+        android:id="@+id/btn_q4a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q4_txt"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@android:color/white"
+        android:textColor="#085980"
+        android:text="ANDROID"
+        android:textSize="15sp"
+        android:fontFamily="@font/bowlby_one_sc"/>
+
+    <Button
+        android:id="@+id/btn_q4b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_q4a"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@android:color/white"
+        android:textColor="#085980"
+        android:text="UBUNTU"
+        android:textSize="15sp"
+        android:fontFamily="@font/bowlby_one_sc"/>
+
+    <Button
+        android:id="@+id/btn_q4c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_q4b"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@android:color/white"
+        android:textColor="#085980"
+        android:text="MAC OS"
+        android:textSize="15sp"
+        android:fontFamily="@font/bowlby_one_sc"/>
+
+    <Button
+        android:id="@+id/btn_q5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_q4c"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="165dp"
+        android:drawableRight="@drawable/next_ques"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="NEXT"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>
