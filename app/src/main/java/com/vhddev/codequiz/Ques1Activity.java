@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Ques1Activity extends AppCompatActivity {
+public class Ques1Activity extends AppCompatActivity implements Answers{
 
     String name,t_score;
     int score;
@@ -70,22 +70,11 @@ public class Ques1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                btn_a.setBackgroundColor(getResources().getColor(R.color.green));
-                btn_b.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_a.setEnabled(false);
-                btn_b.setEnabled(false);
-                btn_c.setEnabled(false);
-                score = score + 10;
-                t_score = String.valueOf(score);
+                right_ans(btn_a);
+                wrong_ans(btn_b,btn_c);
+                buttonDisable(btn_a,btn_b,btn_c);
+                increase_score();
 
-                SharedPreferences sharedPreferences = getSharedPreferences("UserInfo",MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putInt("score",score);
-                editor.apply();
-
-                tv_name.setText(name);
-                tv_score.setText(t_score);
             }
         });
 
@@ -93,17 +82,10 @@ public class Ques1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                btn_a.setBackgroundColor(getResources().getColor(R.color.green));
-                btn_b.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_a.setEnabled(false);
-                btn_b.setEnabled(false);
-                btn_c.setEnabled(false);
-
-                t_score = String.valueOf(score);
-
-                tv_name.setText(name);
-                tv_score.setText(t_score);
+                right_ans(btn_a);
+                wrong_ans(btn_b,btn_c);
+                buttonDisable(btn_a,btn_b,btn_c);
+                show_score();
 
             }
         });
@@ -112,17 +94,10 @@ public class Ques1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                btn_a.setBackgroundColor(getResources().getColor(R.color.green));
-                btn_b.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_c.setBackgroundColor(getResources().getColor(R.color.red));
-                btn_a.setEnabled(false);
-                btn_b.setEnabled(false);
-                btn_c.setEnabled(false);
-
-                t_score = String.valueOf(score);
-
-                tv_name.setText(name);
-                tv_score.setText(t_score);
+                right_ans(btn_a);
+                wrong_ans(btn_b,btn_c);
+                buttonDisable(btn_a,btn_b,btn_c);
+                show_score();
 
             }
         });
@@ -131,14 +106,62 @@ public class Ques1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent next_quesIntent = new Intent(Ques1Activity.this,Ques2Activity.class);
-                startActivity(next_quesIntent);
+                next_question();
 
             }
         });
 
+    }
 
+    @Override
+    public void right_ans(Button button)
+    {
+        button.setBackgroundColor(getResources().getColor(R.color.green));
+    }
 
+    @Override
+    public void wrong_ans(Button button1, Button button2)
+    {
+        button1.setBackgroundColor(getResources().getColor(R.color.red));
+        button2.setBackgroundColor(getResources().getColor(R.color.red));
+    }
+
+    @Override
+    public void buttonDisable(Button button1, Button button2, Button button3)
+    {
+        button1.setEnabled(false);
+        button2.setEnabled(false);
+        button3.setEnabled(false);
+    }
+
+    @Override
+    public void increase_score()
+    {
+        score = score + 10;
+        t_score = String.valueOf(score);
+        SharedPreferences sharedPreferences = getSharedPreferences("UserInfo",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("score",score);
+        editor.apply();
+
+        tv_name.setText(name);
+        tv_score.setText(t_score);
 
     }
+
+    @Override
+    public void show_score()
+    {
+        t_score = String.valueOf(score);
+        tv_name.setText(name);
+        tv_score.setText(t_score);
+    }
+
+    @Override
+    public void next_question()
+    {
+        Intent next_quesIntent = new Intent(Ques1Activity.this,Ques2Activity.class);
+        startActivity(next_quesIntent);
+    }
+
 }
