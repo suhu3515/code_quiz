@@ -10,5 +10,6 @@ interface Answers {
     void increase_score();
     void show_score();
     void next_question();
+    void exit_prompt();
 
 }

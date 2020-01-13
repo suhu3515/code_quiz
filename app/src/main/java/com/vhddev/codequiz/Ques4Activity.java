@@ -1,7 +1,9 @@
 package com.vhddev.codequiz;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -16,6 +18,13 @@ public class Ques4Activity extends AppCompatActivity implements Answers{
     int score;
     TextView tv_name,tv_score;
     Button btn_nxt,btn_a,btn_b,btn_c;
+
+    @Override
+    public void onBackPressed() {
+
+        exit_prompt();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +143,31 @@ public class Ques4Activity extends AppCompatActivity implements Answers{
     {
         Intent nextques_intent = new Intent(Ques4Activity.this,Ques5Activity.class);
         startActivity(nextques_intent);
+    }
+
+    @Override
+    public void exit_prompt()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure to exit?")
+                .setCancelable(false)
+                .setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        finishAffinity();
+                        System.exit(0);
+                    }
+                })
+                .setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
 }
