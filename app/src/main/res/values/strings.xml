@@ -17,4 +17,8 @@
     <string name="ins5">happy learning!</string>
     <string name="play">PLAY</string>
     <string name="player_info">player info</string>
+    <string name="show_age">AGE:</string>
+    <string name="high_score">HIGH SCORE:</string>
+    <string name="copy_code_quiz">©CODE QUIZ</string>
+    <string name="delete_player_info">delete player info</string>
 </resources>
