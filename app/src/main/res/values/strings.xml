@@ -21,4 +21,10 @@
     <string name="high_score">HIGH SCORE:</string>
     <string name="copy_code_quiz">©CODE QUIZ</string>
     <string name="delete_player_info">delete player info</string>
+    <string name="q1">QUESTION 1</string>
+    <string name="q1_txt">Third W in WWW stands for</string>
+    <string name="btn_q1a">WEB</string>
+    <string name="btn_q1b">WIDE</string>
+    <string name="btn_q1c">WORLD</string>
+    <string name="next">NEXT</string>
 </resources>
