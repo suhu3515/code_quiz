@@ -42,4 +42,11 @@
     <string name="btn_q4a">ANDROID</string>
     <string name="btn_q4b">UBUNTU</string>
     <string name="btn_q4c">MAC OS</string>
+    <string name="q5">QUESTION 5</string>
+    <string name="q5_txt">WHO INNOVATED APPLE INC.</string>
+    <string name="btn_q5a">BILL GATES</string>
+    <string name="btn_q5b">JOHNY IVE</string>
+    <string name="btn_q5c">STEVE JOBS</string>
+    <string name="results">Results</string>
+    <string name="back">BACK</string>
 </resources>
