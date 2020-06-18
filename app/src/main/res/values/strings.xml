@@ -32,4 +32,9 @@
     <string name="btn_q2a">WINDOWS 8</string>
     <string name="btn_q2b">WINDOWS 10</string>
     <string name="btn_q2c">WINDOWS XP</string>
+    <string name="q3">QUESTION 3</string>
+    <string name="q3_txt">WHAT IS THE FULLFORM OF GPU</string>
+    <string name="btn_q3a">geographic program unit</string>
+    <string name="btn_q3b">GRAPHICS PROCESSING UNIT</string>
+    <string name="btn_q3c">GRAPHICS PROGRAM UNIT</string>
 </resources>
