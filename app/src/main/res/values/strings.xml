@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">Code Quiz</string>
     <string name="logo">Logo</string>
+    <string name="personal_info_notice">Before we start, we should know some personal details about you. Don\'t worry, these details are not stored anywhere.</string>
+    <string name="name_prompt">Enter your name</string>
+    <string name="name">Name</string>
+    <string name="age_prompt">Enter your age</string>
+    <string name="age">Age</string>
+    <string name="save_info">save info</string>
+    <string name="show_name">NAME:</string>
+    <string name="show_score">SCORE:</string>
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="ins1">1. This game is completely for educational purpose</string>
+    <string name="ins2">2. this game includes questions from C, C++, java, python etc.</string>
+    <string name="ins3">3. you will get 10 points when you make the answer right</string>
+    <string name="ins4">4. THERE is no negative points</string>
+    <string name="ins5">happy learning!</string>
+    <string name="play">PLAY</string>
+    <string name="player_info">player info</string>
 </resources>
