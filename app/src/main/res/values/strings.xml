@@ -37,4 +37,9 @@
     <string name="btn_q3a">geographic program unit</string>
     <string name="btn_q3b">GRAPHICS PROCESSING UNIT</string>
     <string name="btn_q3c">GRAPHICS PROGRAM UNIT</string>
+    <string name="q4">QUESTION 4</string>
+    <string name="q4_txt">CHOOSE MOBILE OPERATING SYSTEM FROM THE LIST</string>
+    <string name="btn_q4a">ANDROID</string>
+    <string name="btn_q4b">UBUNTU</string>
+    <string name="btn_q4c">MAC OS</string>
 </resources>
