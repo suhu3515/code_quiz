@@ -27,4 +27,9 @@
     <string name="btn_q1b">WIDE</string>
     <string name="btn_q1c">WORLD</string>
     <string name="next">NEXT</string>
+    <string name="q2">QUESTION 2</string>
+    <string name="q2_txt">The latest version of windows operating system</string>
+    <string name="btn_q2a">WINDOWS 8</string>
+    <string name="btn_q2b">WINDOWS 10</string>
+    <string name="btn_q2c">WINDOWS XP</string>
 </resources>
