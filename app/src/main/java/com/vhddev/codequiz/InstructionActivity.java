@@ -13,9 +13,9 @@ import android.widget.TextView;
 
 public class InstructionActivity extends AppCompatActivity {
 
-    String name,t_score;
+    String t_score;
     int score;
-    TextView tv_name,tv_score;
+    TextView tv_score;
     Button btn_play,btn_info;
 
 
@@ -52,16 +52,13 @@ public class InstructionActivity extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences("UserInfo",MODE_PRIVATE);
 
-        tv_name = findViewById(R.id.top_name);
         tv_score = findViewById(R.id.top_score);
         btn_play = findViewById(R.id.btn_play);
         btn_info = findViewById(R.id.btn_p_info);
 
-        name = sharedPreferences.getString("UserName",null);
         score = sharedPreferences.getInt("score",0);
         t_score = String.valueOf(score);
 
-        tv_name.setText(name);
         tv_score.setText(t_score);
 
         btn_info.setOnClickListener(new View.OnClickListener() {

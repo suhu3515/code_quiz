@@ -25,6 +25,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="25dp"
         android:text="@string/app_name"
         android:textColor="@android:color/white"
         android:textSize="40sp" />

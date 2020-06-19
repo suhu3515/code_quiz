@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Code Quiz</string>
     <string name="logo">Logo</string>
-    <string name="personal_info_notice">Before we start, we should know some personal details about you. Don\'t worry, these details are not stored anywhere.</string>
+    <string name="personal_info_notice">We are just curious enough to know about you.</string>
     <string name="name_prompt">Enter your name</string>
     <string name="name">Name</string>
     <string name="age_prompt">Enter your age</string>
@@ -49,4 +49,6 @@
     <string name="btn_q5c">STEVE JOBS</string>
     <string name="results">Results</string>
     <string name="back">BACK</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="you_scored">you scored</string>
 </resources>

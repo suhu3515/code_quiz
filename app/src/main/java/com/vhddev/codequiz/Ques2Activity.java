@@ -13,9 +13,9 @@ import android.widget.TextView;
 
 public class Ques2Activity extends AppCompatActivity implements Answers{
 
-    String name,t_score;
+    String t_score;
     int score;
-    TextView tv_name,tv_score;
+    TextView tv_score;
     Button btn_nxt,btn_a,btn_b,btn_c;
 
     @Override
@@ -32,17 +32,14 @@ public class Ques2Activity extends AppCompatActivity implements Answers{
 
         SharedPreferences sharedPreferences = getSharedPreferences("UserInfo",MODE_PRIVATE);
 
-        tv_name = findViewById(R.id.top_name_q2);
         tv_score = findViewById(R.id.top_score_q2);
         btn_nxt = findViewById(R.id.btn_q3);
         btn_a = findViewById(R.id.btn_q2a);
         btn_b = findViewById(R.id.btn_q2b);
         btn_c = findViewById(R.id.btn_q2c);
 
-        name = sharedPreferences.getString("UserName",null);
         score = sharedPreferences.getInt("score",0);
 
-        tv_name.setText(name);
         t_score = String.valueOf(score);
         tv_score.setText(t_score);
 
@@ -123,7 +120,6 @@ public class Ques2Activity extends AppCompatActivity implements Answers{
         editor.putInt("score",score);
         editor.apply();
 
-        tv_name.setText(name);
         tv_score.setText(t_score);
 
     }
@@ -132,7 +128,6 @@ public class Ques2Activity extends AppCompatActivity implements Answers{
     public void show_score()
     {
         t_score = String.valueOf(score);
-        tv_name.setText(name);
         tv_score.setText(t_score);
     }
 
