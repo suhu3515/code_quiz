@@ -46,6 +46,7 @@ public class Ques5Activity extends AppCompatActivity implements Answers{
             @Override
             public void onClick(View v) {
 
+                enableNext();
                 right_ans(btn_c);
                 wrong_ans(btn_a,btn_b);
                 buttonDisable(btn_a,btn_b,btn_c);
@@ -58,6 +59,7 @@ public class Ques5Activity extends AppCompatActivity implements Answers{
             @Override
             public void onClick(View v) {
 
+                enableNext();
                 right_ans(btn_c);
                 wrong_ans(btn_a,btn_b);
                 buttonDisable(btn_a,btn_b,btn_c);
@@ -70,6 +72,7 @@ public class Ques5Activity extends AppCompatActivity implements Answers{
             @Override
             public void onClick(View v) {
 
+                enableNext();
                 right_ans(btn_c);
                 wrong_ans(btn_a,btn_b);
                 buttonDisable(btn_a,btn_b,btn_c);
@@ -86,6 +89,13 @@ public class Ques5Activity extends AppCompatActivity implements Answers{
 
             }
         });
+    }
+
+    @Override
+    public void enableNext() {
+
+        btn_res.setEnabled(true);
+
     }
 
     @Override

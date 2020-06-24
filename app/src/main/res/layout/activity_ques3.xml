@@ -138,6 +138,7 @@
         android:fontFamily="@font/bowlby_one_sc"
         android:text="@string/next"
         android:textColor="@android:color/white"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:enabled="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

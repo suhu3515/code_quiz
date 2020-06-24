@@ -13,10 +13,10 @@ import android.widget.TextView;
 
 public class PlayerInfoActivity extends AppCompatActivity {
 
-    String name,t_score,age;
+    String name,age;
     int score;
 
-    TextView tv_name,tv_age,tv_score;
+    TextView tv_name,tv_age;
     Button btn_d;
 
 
@@ -27,7 +27,6 @@ public class PlayerInfoActivity extends AppCompatActivity {
 
         tv_name = findViewById(R.id.tv_p_name);
         tv_age = findViewById(R.id.tv_p_age);
-        tv_score = findViewById(R.id.tv_p_score);
 
         btn_d = findViewById(R.id.btn_del);
 
@@ -38,8 +37,6 @@ public class PlayerInfoActivity extends AppCompatActivity {
         age = sharedPreferences.getString("age",null);
 
         tv_name.setText(name);
-        t_score = String.valueOf(score);
-        tv_score.setText(t_score);
         tv_age.setText(age);
 
         btn_d.setOnClickListener(new View.OnClickListener() {

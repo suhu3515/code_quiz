@@ -90,6 +90,13 @@ public class Ques3Activity extends AppCompatActivity implements Answers{
     }
 
     @Override
+    public void enableNext() {
+
+        btn_nxt.setEnabled(true);
+
+    }
+
+    @Override
     public void right_ans(Button button)
     {
         button.setBackgroundColor(getResources().getColor(R.color.green));
